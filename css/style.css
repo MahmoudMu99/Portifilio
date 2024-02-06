@@ -1,0 +1,823 @@
+:root {
+    --main-color:#f5f5f5;
+    --main-fonts: 'Montserrat', sans-serif;
+}
+* {
+    list-style: none;
+    text-decoration: none;
+}
+/* begin of navbar */
+.navbar-brand {
+    font-family: var(--main-fonts);
+    font-weight: 800;
+
+}
+.nav-link {
+    color: white;
+}
+#navid .active{
+    color:white;
+  
+}
+#navid .nav-item .nav-link{
+    overflow: hidden;
+    position: relative;
+}
+#navid .nav-item .nav-link::after{
+    content: " ";
+    position: absolute;
+    height: 2px;
+    width: 80%;
+    bottom: 20%;
+    left: -100%;
+    padding-left: 3px;
+    background-color: white;
+    transition: 1s;
+}
+#navid .nav-item .nav-link.active::after{
+    left: 9%;
+}
+/* end of navbar */
+
+
+/* begin of home section */
+#Home {
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.613) 0% 100%) , url('../imgs/bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#Home .homecaption strong {
+font-family: var(--main-fonts);
+    font-weight: 800;
+    color: white;
+    font-size: 50px;
+    padding-left: 10px;
+}
+#Home .homecaption h1 {
+    font-family: var(--main-fonts);
+        font-weight: 400;
+        color: white;
+        font-size: 50px;
+}
+#Home .homecaption span {
+        font-family: var(--main-fonts);
+            font-weight: 500;
+            color: white;
+            font-size: 60px;
+        
+        
+   }
+   #Home .homecaption ul {
+    display: flex;
+   justify-content: center;
+
+   }
+   #Home .homecaption a {
+    display: inline-block;
+    padding: 20px 10px ;
+    color: white;
+    
+   }
+   #Home .homecaption i {
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid black;
+    padding-top: 7px; background-color: black;
+    
+   }
+   /* end of home section */
+
+   /*begin of about sectio  */
+   #About .aboutimg {
+    position: relative;
+    top: 0;
+    left: 0;
+   
+  
+   }
+   .photo {
+    width: 100%;
+   }
+   .abouthead h2 {
+    font-family: var(--main-fonts);
+    font-weight: 800;
+    font-size: 30px;
+   }
+  #About .allskill {
+    height: 25px;
+}
+
+#About .skills {
+    width: 95%;
+    background-color: black !important;
+}
+#About .skillbox {
+    
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 16px;
+}
+#About .skills2 {
+    width: 80%;
+}
+#About .skills3 {
+    width: 90%;
+}
+#About .buttungroup .btn {
+    font-size: 14px;
+    
+}
+.layerbox {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#About .layerimg {
+    background-image: radial-gradient( white 2px , transparent 3px) , url('../imgs/dots.png');
+   width: 70%;
+  height: 60%;
+  background-size: 10px 10px;
+  position: absolute;
+  top: 47%;
+  right:36%;
+
+}
+.aboutimg img {
+    width: 100%;
+}
+
+
+.button1 {
+    transition: 0s !important;
+}
+.button1:hover {
+    background-color:transparent !important;
+    color: black;
+}
+
+/* end of about section */
+
+/* begin of services section */
+#Services {
+    background-color: var(--main-color);
+}
+#Services .each-service {
+    background-color: white;
+    border-radius: 10px;
+}
+#Services .each-service i {
+    font-size: 25px;
+    width: 70px;
+    height: 70px;
+    background-color:var(--main-color);
+    padding-top: 22px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    transition: 0s;
+    margin-top: 10px;
+}
+#Services .serviceheader {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    
+}
+#Services .serviceheader::after {
+    content: '';
+    position: absolute;
+    right: 43.5%;
+    top: 42%;
+    width: 180px;
+    height: 30px;
+    background-image: radial-gradient(rgba(128, 128, 128, 0.326) 2px, transparent 2px );
+   background-size: 10px 10px;
+
+}
+@media screen and (max-width:576px){
+    #Services .serviceheader::after {
+        content: '';
+        position: absolute;
+        right: 30%;
+        top: 42%;
+        width: 180px;
+        height: 30px;
+        background-image: radial-gradient(rgba(128, 128, 128, 0.326) 2px, transparent 2px );
+       background-size: 10px 10px;
+    
+
+    }
+}
+@media screen and (min-width:576px) and (max-width:768px)   {
+    #Services .serviceheader::after  {
+
+        content: '';
+        position: absolute;
+        right: 30%;
+        top: 42%;
+        width: 180px;
+        height: 30px;
+        background-image: radial-gradient(rgba(128, 128, 128, 0.326) 2px, transparent 2px );
+       background-size: 10px 10px;
+    
+
+        
+    
+   }
+ }
+ @media screen and (min-width: 993px) and (max-width:1200px)  {
+    #Services .serviceheader::after{
+
+        content: '';
+        position: absolute;
+        right: 40%;
+        top: 42%;
+        width: 180px;
+        height: 30px;
+        background-image: radial-gradient(rgba(128, 128, 128, 0.326) 2px, transparent 2px );
+       background-size: 10px 10px;
+    
+    
+   } 
+    
+   }
+
+
+#Services .serviceheader h2 {
+    font-family: var(--main-fonts);
+    font-weight: 900;
+    font-size: 40px;
+
+}
+#Services .servicename:hover i {
+    background-color: black;
+    color: white;
+
+}
+/* end of section */
+
+
+/* begin of section */
+
+.portfiliohead h2 {
+    font-family: var(--main-fonts);
+    font-weight: 900;
+    font-size:40px ;
+}
+ .portfiliohead {
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+ .portfiliohead::after {
+    content: '';
+    position: absolute;
+    right: 44.5%;
+    top: 55%;
+    width: 180px;
+    height: 30px;
+    background-image: radial-gradient(rgba(128, 128, 128, 0.326) 1px, transparent 2px );
+   background-size: 10px 10px;
+
+}
+@media screen and (max-width:576px){
+    .portfiliohead::after  {
+        content: '';
+        position: absolute;
+        right: 34.5%;
+        top: 55%;
+        width: 180px;
+        height: 30px;
+        background-image: radial-gradient(rgba(128, 128, 128, 0.326) 1px, transparent 2px );
+       background-size: 10px 10px;
+        
+
+    }
+}
+@media screen and (min-width:576px) and (max-width:768px)   {
+    .portfiliohead::after   {
+
+        content: '';
+        position: absolute;
+        right:35%;
+        top: 55%;
+        width: 200px;
+        height: 30px;
+        background-image: radial-gradient(rgba(128, 128, 128, 0.326) 1px, transparent 2px );
+       background-size: 10px 10px;
+        
+
+        
+    
+   }
+ }
+ @media screen and (min-width: 993px) and (max-width:1200px)  {
+    .portfiliohead::after {
+
+        content: '';
+        position: absolute;
+        right: 42%;
+        top: 55%;
+        width: 180px;
+        height: 30px;
+        background-image: radial-gradient(rgba(128, 128, 128, 0.326) 1px, transparent 2px );
+       background-size: 10px 10px;
+        
+   } 
+    
+   }
+
+
+.serviceitem .nav-link {
+    color: black;
+   
+ 
+    font-weight: bold;
+
+}
+.serviceitem .active {
+    color: black;
+    background-color: white;
+ 
+    font-weight: bold;
+
+}
+.serviceitem .nav-item .active{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.serviceitem .nav-item .active::after {
+    content: '';
+    background-color: black;
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    width: 50%;
+    height:3px;
+
+    
+
+}
+
+ .portfilioimg {
+   position: relative;
+   top: 0px;
+   left: 0px;
+}
+.layer {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(255, 255, 255);
+    border: 5px solid rgba(128, 128, 128, 0.624);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+ .portfilioimg:hover .layer {
+    opacity: 1;
+}
+.layericon i {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    padding-top: 8px;
+    padding-left: 3px;
+    color: white;
+    border-radius: 50%;
+
+}
+.layericon i:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.389);
+}
+.layericon .spcicon {
+    padding-top: 7px;
+    padding-right: 2px;
+}
+/* end of section */
+
+/* start of section */
+#Clients {
+    background-color: #f5f5f5;
+  
+    
+}
+#Clients .clientheader {
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+#Clients .clientheader::after {
+    content: '';
+    position: absolute;
+    right: 37%;
+    top: 45%;
+    width: 340px;
+    height: 30px;
+    background-image: radial-gradient(rgba(128, 128, 128, 0.326) 1px, transparent 2px );
+   background-size: 10px 10px;
+
+}
+@media screen and (max-width:576px){
+    #Clients .clientheader::after  {
+        content: '';
+        position: absolute;
+        right: 12.5%;
+        top: 45%;
+        width: 350px;
+        height: 30px;
+        background-image: radial-gradient(rgba(128, 128, 128, 0.326) 1px, transparent 2px );
+       background-size: 10px 10px;
+        
+
+    }
+}
+@media screen and (min-width:576px) and (max-width:768px)   {
+    #Clients .clientheader::after  {
+
+        content: '';
+        position: absolute;
+        right: 15.5%;
+        top: 45%;
+        width: 350px;
+        height: 30px;
+        background-image: radial-gradient(rgba(128, 128, 128, 0.326) 1px, transparent 2px );
+       background-size: 10px 10px;
+        
+
+        
+    
+   }
+ }
+ @media screen and (min-width: 993px) and (max-width:1200px)  {
+    #Clients .clientheader::after {
+
+        content: '';
+        position: absolute;
+        right: 31.5%;
+        top: 45%;
+        width: 350px;
+        height: 30px;
+        background-image: radial-gradient(rgba(128, 128, 128, 0.326) 1px, transparent 2px );
+       background-size: 10px 10px;
+        
+   } 
+    
+   }
+
+
+#Clients .clientheader h2 {
+    font-family: var(--main-fonts);
+    font-weight: 900;
+    font-size: 50px;
+   
+    
+
+}
+
+
+.photo img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  
+}
+.photo p {
+    color: gray;
+} 
+.carousel-caption {
+    position: relative;
+    top: 45%;
+    left: 0%;
+}
+.carousel-caption p {
+    color: gray;
+}
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50%;
+}
+
+/* end of section */
+
+/* start of section */
+.datatypes i {
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.datatypes strong {
+    font-size: 30px;
+    padding-bottom: 15px;
+    font-weight: 900;
+}
+
+.datatypes p {
+    font-size: 18px;
+    font-weight: bold;
+    color: gray;
+    padding-bottom: 10px;
+}
+
+/* end of section */
+/* start of section */
+#Team {
+    background-color: #f5f5f5;
+}
+#Team .teamheader {
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+#Team .teamheader::after {
+    content: '';
+    position: absolute;
+    right: 41.5%;
+    top: 45%;
+    width: 210px;
+    height: 30px;
+    background-image: radial-gradient(rgba(128, 128, 128, 0.326) 1px, transparent 2px );
+   background-size: 10px 10px;
+
+}
+@media screen and (max-width:576px){
+    #Team .teamheader::after  {
+        content: '';
+        position: absolute;
+        right: 24%;
+        top: 45%;
+        width: 200px;
+        height: 30px;
+        background-image: radial-gradient(rgba(128, 128, 128, 0.326) 1px, transparent 2px );
+       background-size: 10px 10px;
+        
+
+    }
+}
+@media screen and (min-width:576px) and (max-width:768px)   {
+    #Team .teamheader::after  {
+
+        content: '';
+        position: absolute;
+        right: 27%;
+        top: 45%;
+        width: 200px;
+        height: 30px;
+        background-image: radial-gradient(rgba(128, 128, 128, 0.326) 1px, transparent 2px );
+       background-size: 10px 10px;
+
+        
+    
+   }
+ }
+ @media screen and (min-width: 993px) and (max-width:1200px)  {
+    #Team .teamheader::after {
+
+        content: '';
+        position: absolute;
+        right: 38%;
+        top: 45%;
+        width: 200px;
+        height: 30px;
+        background-image: radial-gradient(rgba(128, 128, 128, 0.326) 1px, transparent 2px );
+       background-size: 10px 10px;
+        
+   } 
+    
+   }
+
+
+
+#Team .teamheader h2 {
+    font-family: var(--main-fonts);
+    font-weight: 900;
+    font-size: 40px;
+}
+.card-body {
+    background-color:#5b5b5b ;
+    color: white;
+}
+.team-member {
+    width: 100%;
+}
+.memberimg {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden; 
+}
+.memberimg img {
+    transition: 1s;
+}
+.memberimg:hover  img{
+transform: scale(1.2);
+}
+
+ 
+.layer-team {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+   
+    background-color: white;
+    width: 96%;
+    height: 96%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+   transition: 1s  ;
+   
+    transition: all 0.5s;
+    transform: rotateY(180deg) scale(0.5, 0.5);
+}
+.layer-team ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.layer-team a {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.layer-team i {
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding-top: 8px;
+}
+.layer-team i:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.301);
+}
+.team-member:hover .layer-team{
+    opacity: 1;
+    transform: scale(1);
+   
+    
+}
+/* end of section */
+
+/* start of section */
+.contacthead h2 {
+    font-size: 40px;
+    font-family: var(--main-fonts);
+    font-weight: 900;
+}
+.contactdetail  i {
+font-size: 25px;
+width: 60px;
+height: 60px;
+background-color: #f5f5f5;
+border-radius: 50%;
+text-align: center;
+padding-top: 20px;
+
+
+}
+#Contact .contacthead {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+#Contact .contacthead::after {
+    content: '';
+    position: absolute;
+    right: 40%;
+    top: 45%;
+    width: 250px;
+    height: 30px;
+    background-image: radial-gradient(rgba(128, 128, 128, 0.326) 1px, transparent 2px );
+   background-size: 10px 10px;
+
+}
+@media screen and (max-width:576px){
+    #Contact .contacthead::after {
+        content: '';
+        position: absolute;
+        right: 22%;
+        top: 45%;
+        width: 240px;
+        height: 30px;
+        background-image: radial-gradient(rgba(128, 128, 128, 0.326) 1px, transparent 2px );
+       background-size: 10px 10px;
+        
+
+    }
+}
+@media screen and (min-width:576px) and (max-width:768px)   {
+    #Contact .contacthead::after  {
+
+        content: '';
+        position: absolute;
+        right: 27%;
+        top: 45%;
+        width: 220px;
+        height: 30px;
+        background-image: radial-gradient(rgba(128, 128, 128, 0.326) 1px, transparent 2px );
+       background-size: 10px 10px;
+
+        
+    
+   }
+ }
+ @media screen and (min-width: 993px) and (max-width:1200px)  {
+    #Contact .contacthead::after {
+
+        content: '';
+        position: absolute;
+        right: 38%;
+        top: 45%;
+        width: 230px;
+        height: 30px;
+        background-image: radial-gradient(rgba(128, 128, 128, 0.326) 1px, transparent 2px );
+       background-size: 10px 10px;
+        
+   } 
+    
+   }
+
+.contactdetail  i:hover {
+    background-color: black;
+    color: white;
+}
+
+
+.contactdetail  p {
+    font-size: 16px;
+   
+}
+.contactdetail h4 {
+    font-family: var(--main-fonts);
+    font-weight: bold;
+    font-size: 16px;
+}
+.input1 input {
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    border: none;
+    padding: 8px 0px;
+   outline: 0;
+   
+}
+
+.input1 [placeholder] {
+    padding-left: 8px;
+}
+.area textarea {
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    border: none;
+    padding: 8px 0px;
+    color: #5b5b5b;
+    outline: 0;
+   
+}
+.contactbutton button {
+    color: white;
+    background-color: black;
+    transition: 1s;
+    padding: 8px 40px;
+
+}
+.contactbutton button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.272);
+}
+
+/* end of section */
+.footer .footercontent {
+  color: gray;
+   
+}
+
+
+
+
